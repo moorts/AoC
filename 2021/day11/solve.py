@@ -63,9 +63,7 @@ def neighbors(x, y):
 def solve(data):
     grid = [[int(x) for x in line] for line in data]
     total = 0
-    i = 0
     for i in range(100):
-        i += 1
         # Add one to all
         flashes = []
         for y in range(10):
