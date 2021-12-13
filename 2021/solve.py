@@ -48,10 +48,12 @@ def solve(data):
 def solve2(data):
     pass
 
+"""
 first_result = solve(test_data)
 second_result = solve2(test_data)
 print(f"TESTDATA Part 1: {first_result}")
 print(f"TESTDATA Part 2: {second_result}")
+"""
 
 first_result = solve(data)
 second_result = solve2(data)
