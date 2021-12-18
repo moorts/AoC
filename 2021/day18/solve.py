@@ -81,8 +81,6 @@ def solve(data, part_2=False):
                         if split(s):
                             continue
                         break
-                if mag(s) > m:
-                    print(s1, s2)
                 m = max(m, mag(s))
         return m
 
@@ -198,17 +196,6 @@ def split(t):
             return split(t[1])
     return True
 
-
-
-def explode(t):
-    leaves = leaves(t)
-    s = [(t, 0)]
-    found = 0
-    while s:
-        c = s.pop()
-        if type(c[0]) == list:
-            if c[1] == 4:
-                pass
 
 
 first_result = solve(test_data)
